@@ -4,13 +4,18 @@
   <head>
         <meta charset="UTF-8" />
         <meta name="The Enchanged Plate Menu" content="Browse The Enchanted Plate's entrees, main dishes and desserts. Order before arrival, with OhMyFood."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--Link To CSS-->
-        <link rel="stylesheet" href="#">
+        <link rel="stylesheet" href="../stylesheet/style.css">
         <!--Link To Font Awesome-->
         <script src="https://kit.fontawesome.com/a44905290d.js" crossorigin="anonymous"></script>
         <!--Link To Favicon-->
-        <link rel="icon" href="images/favicon.ico">
+        <link rel="icon" href="../images/favicon.ico">
         <!--Link To Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -20,164 +25,185 @@
 
 
 <body>
-        <header>
-            <a class="arrow_back" href="OhMyFood.html">
-                <i class="fa-solid fa-arrow-left"></i>
+    <header>
+        <a class="arrow_back" href="Home_page.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+        <div class="block__logo block__logo--header block__logo--otherpages">
+            <a class="logo_link" href="Home_page.html">
+                <img class="logo__image logo__image--black" src="../images/ohmyfood.png" alt="OhMyFood Logo">
             </a>
+        </div>
+    </header>
 
-            <div class="block_logo">
-                <img class="logo" src="images/ohmyfood.png" alt="OhMyFood Logo">
-            </div>
-        </header>
-
-        <img class="intro_image" src="images/the_enchanted_plate.jpg" alt="The Enchanted Plate, New York"/>
+        <img class="intro__image" src="../images/the_enchanted_plate.jpg" alt="The Enchanted Plate, New York"/>
     
     <div class="the_menu">
-        <h1 class="menu_header">
-            <span class="header_text">
+        <h1 class="menu__header">
+            <span class="header__text">
                 The Enchanted Plate
             </span>
 
-            <span class="header_icon">
-                <i class="fa-regular fa-heart"></i>
+            <span class="header__icon">
+                <i class="fa-solid fa-heart"></i>
             </span>
         </h1>
 
-        <h2>ENTREES</h2>
+        <div class="the_menu_sections">
+            <div class="entrees__section">
+                <div class="menu__subheader">
+                    <h4>ENTREES</h4>
+                    <hr>
+                </div>
 
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Foie Gras Ravioli</b>
-                <br> 
-                With Truffle Cream
-            </span>
             
-            <span class="menu_price">
-                <b>25€</b>
-            </span>
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Foie Gras Ravioli</b>
+                        <br> 
+                        With Truffle Cream
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>25€</b>
+                    </span>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Oscietra Caviar</b>
+                        <br> 
+                        With Buckwheat Blinis
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>35€</b>
+                    </span>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Lobster And Leak Foam</b>
+                        <br> 
+                        Marinated With Orange Zest
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>20€</b>
+                    </span>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Duck Foie Gras</b>
+                        <br> 
+                        With Fig Jam & Grilled Baguette
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>35€</b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="main_dish__section">
+                <div class="menu__subheader">
+                    <h4>MAIN DISH</h4>
+                    <hr>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Fresh Buttered Scallops</b>
+                        <br> 
+                        With White Celery Puree
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>40€</b>
+                    </span>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Pan-Fried Lobster</b>
+                        <br> 
+                        With Mashed Sweet Potatoes
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>35€</b>
+                    </span>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Braised Ox Tail</b>
+                        <br> 
+                        With Wild Rice & Lemon Zest
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>44€</b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="desserts__section">
+                <div class="menu__subheader">
+                    <h4>DESSERTS</h4>
+                    <hr>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Chocolate & Hazelnut Macaroons</b>
+                        <br> 
+                        With Caramel Butter Ice Cream
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>18€</b>
+                    </span>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Baba Au Rhum</b>
+                        <br> 
+                        With Lemon Drizzle
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>22€</b>
+                    </span>
+                </div>
+
+                <div class="menu__item">
+                    <span class="menu__text">
+                        <b>Lemon Meringue Pie</b>
+                        <br> 
+                        Destructured
+                    </span>
+                    
+                    <span class="menu__price">
+                        <b>23€</b>
+                    </span>
+                </div>
+            </div>
         </div>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Oscietra Caviar</b>
-                <br> 
-                With Buckwheat Blinis
-            </span>
-            
-            <span class="menu_price">
-                <b>35€</b>
-            </span>
-        </div>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Lobster And Leak Foam</b>
-                <br> 
-                Marinated With Orange Zest
-            </span>
-            
-            <span class="menu_price">
-                <b>20€</b>
-            </span>
-        </div>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Duck Foie Gras</b>
-                <br> 
-                With Fig Jam & Grilled Baguette
-            </span>
-            
-            <span class="menu_price">
-                <b>35€</b>
-            </span>
-        </div>
-
-        <h2>MAIN DISH</h2>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Fresh Buttered Scallops</b>
-                <br> 
-                With White Celery Puree
-            </span>
-            
-            <span class="menu_price">
-                <b>40€</b>
-            </span>
-        </div>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Pan-Fried Lobster</b>
-                <br> 
-                With Mashed Sweet Potatoes
-            </span>
-            
-            <span class="menu_price">
-                <b>35€</b>
-            </span>
-        </div>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Braised Ox Tail</b>
-                <br> 
-                With Wild Rice & Lemon Zest
-            </span>
-            
-            <span class="menu_price">
-                <b>44€</b>
-            </span>
-        </div>
-
-        <h2>DESSERTS</h2>
-        
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Chocolate & Hazelnut Macaroons</b>
-                <br> 
-                With Caramel Butter Ice Cream
-            </span>
-            
-            <span class="menu_price">
-                <b>18€</b>
-            </span>
-        </div>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Baba Au Rhum</b>
-                <br> 
-                With Lemon Drizzle
-            </span>
-            
-            <span class="menu_price">
-                <b>22€</b>
-            </span>
-        </div>
-
-        <div class="menu_item">
-            <span class="menu_text">
-                <b>Lemon Meringue Pie</b>
-                <br> 
-                Destructured
-            </span>
-            
-            <span class="menu_price">
-                <b>23€</b>
-            </span>
+        <div class="button-container">
+            <button class="button button--order">
+                <a class="text--white" href="#">Order</a>
+            </button>
         </div>
     </div>
-        
-    <button class="order_button">
-        <a class="button_text" href="#">Order</a>
-    </button>
 </body>
 
 <footer>
-    <div class="footer_logo">
-         <img class="logo" src="images/ohmyfood.png" alt="OhMyFood Logo">
+    <div class="block__logo--footer">
+         <img class="logo__image logo__image--white" src="../images/ohmyfood.png" alt="OhMyFood Logo">
      </div>
  
      <div class="footer_options">
