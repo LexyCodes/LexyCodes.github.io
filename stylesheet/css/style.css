@@ -1,0 +1,338 @@
+* {
+  font-family: "Roboto", sans-serif;
+  --primary-colour:#9356dc;
+  --secondary-color: #ff79da;
+  --tertiary-color: #99e2d0;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+.text {
+  margin-left: 15px;
+}
+.text--white {
+  color: white;
+  text-align: center;
+}
+.text--black {
+  color: black;
+}
+.location__icon {
+  padding-right: 15px;
+}
+header {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  background-color: white;
+}
+.block__logo, .logo_link {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+}
+.block__logo--homepage, .logo_link--homepage {
+  padding: 15px 0px;
+  box-shadow: 0 4px 6px -6px #777676;
+  order: 2;
+}
+.block__logo--otherpages, .logo_link--otherpages {
+  padding: 15px 35px 15px 0px;
+}
+.arrow_back .fa-solid {
+  font-size: 20px;
+  color: #353535;
+  padding: 20px 0px 25px 20px;
+  -webkit-text-stroke: 0.6px;
+}
+.location {
+  background-color: #efefef;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0px;
+  order: 2;
+}
+.intro {
+  padding: 15px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.intro__header, .intro__subheader {
+  text-align: center;
+  padding: 5px;
+}
+.intro__subheader {
+  padding: 0px 20px 0px 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #303030;
+  margin-bottom: 30px;
+}
+.intro__image {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1.4285714286;
+  margin-bottom: 0px;
+}
+@media (min-width: 768px) {
+  .intro__image {
+    aspect-ratio: 2.6666666667;
+  }
+}
+.button {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border: none;
+  border-radius: 50px;
+  padding: 15px 20px;
+  font-weight: 600;
+  box-shadow: 0px 3px 5px 2px #c2c0c0;
+}
+.button--explore {
+  width: 40%;
+  margin: 0px auto 50px;
+}
+@media (min-width: 768px) {
+  .button--explore {
+    width: 60%;
+  }
+}
+.button--order {
+  width: 30%;
+  margin: 0px 0px 50px;
+}
+.howto {
+  margin-top: 50px;
+  background-color: white;
+}
+.howto__header {
+  padding-left: 25px;
+}
+.howto__boxes {
+  list-style: none;
+  padding: 0px 10px 0px 20px;
+}
+.howto__boxes .box {
+  border: none;
+  border-radius: 15px;
+  background-color: #f7f7f7;
+  padding: 20px 10px;
+  padding-right: 50px;
+  margin: 15px;
+  box-shadow: 0px 5px 5px 0px #e7e7e7;
+  counter-increment: inst;
+}
+.howto__boxes .box:before {
+  content: counter(inst);
+  background: var(--primary-colour);
+  color: white;
+  font-style: inherit;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 4px 8px;
+  text-align: center;
+  position: relative;
+  left: -20px;
+}
+.howto__boxes .box:hover {
+  background-color: #f5edff;
+}
+.howto__boxes .box:hover .box__icon--active {
+  color: #9356dc;
+}
+.howto__boxes .box:hover .text {
+  color: black;
+}
+.Restaurants {
+  background-color: #f7f7f7;
+  width: 100%;
+  margin: 50px 0px 0px;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .Restaurants {
+    margin-top: 0px;
+  }
+}
+.Restaurants__header {
+  margin: 0px;
+  padding: 50px 15px 20px 25px;
+}
+.restaurant__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 15px;
+}
+.restaurant .card {
+  font-size: 13px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 8px 1px lightgrey;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.restaurant__image {
+  width: 100%;
+  aspect-ratio: 2;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+  display: block;
+}
+@media (min-width: 768px) {
+  .restaurant__image {
+    aspect-ratio: 2.5;
+  }
+}
+.image_label {
+  position: relative;
+  display: inline-block;
+}
+.New_Label {
+  border: none;
+  border-radius: 3px;
+  padding: 1.5% 7%;
+  font-size: 13px;
+  background-color: #99e2d0;
+  color: #008766;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-20%, 50%);
+}
+.restaurant__name {
+  padding: 15px 12px;
+  color: black;
+  font-size: 15px;
+  line-height: 20px;
+}
+.restaurant__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant__info .fa-heart {
+  font-size: 30px;
+  color: #adadad;
+  display: flex;
+  justify-content: center;
+  padding: 15px 25px;
+}
+.fa-heart:hover {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* other pages */
+.the_menu {
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0px 0px;
+  margin-top: 0px;
+  padding: 10px 20px;
+  position: relative;
+  margin-top: -50px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.header__text {
+  font-family: 'Shrikhand', cursive;
+}
+.menu__header .header__icon {
+  padding: 0px 15px;
+  color: #adadad;
+}
+.menu__subheader {
+  color: #7b7b7b;
+  position: relative;
+}
+.menu__subheader hr {
+  border: 2px solid var(--tertiary-color);
+  width: 37px;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.desserts__section, .main_dish__section, .entrees__section {
+  margin: 0px 0px 50px 0px;
+}
+.menu__item {
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0px 0px 15px 0px;
+  padding: 15px;
+}
+.menu__price {
+  display: flex;
+  align-items: flex-end;
+}
+.button-container {
+  text-align: center;
+}
+/* all footers */
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 25px;
+  background-color: #353535;
+  color: white;
+  line-height: 30px;
+}
+.logo__image--white {
+  max-width: 150px;
+  height: 30%;
+  filter: invert(100%);
+}
+footer a {
+  color: white;
+}
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+  }
+  .intro, .howto {
+    flex-basis: 50%;
+    justify-content: center;
+    align-content: center;
+    margin-top: 0px;
+    background-color: white;
+  }
+  .restaurant {
+    flex-basis: 50%;
+  }
+  .the_menu_sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  .desserts__section, .main_dish__section, .entrees__section {
+    flex-basis: 45%;
+  }
+}
