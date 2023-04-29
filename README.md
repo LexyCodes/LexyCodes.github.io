@@ -1,5 +1,8 @@
 # [OhMyFood](https://lexycodes.github.io/index.html)
-A 100% mobile-friendly site that lists the menus of gourmet restaurants. This is a classic reservation system, allowing orders to be made prior to arrival.
+A 100% mobile-friendly site that lists the menus of gourmet restaurants. 
+This is a classic reservation system, allowing orders to be made prior to arrival. 
+
+This website is designed with a mobile view at the forefront of the mind, but is responsive and friendly to use on laptops and tablets alike. 
 
 This project utilises HTML & CSS only. 
 
