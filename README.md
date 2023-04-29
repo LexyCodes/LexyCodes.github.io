@@ -18,4 +18,6 @@ Files are organised as follows:
 
 To run the page, please click the link above. 
 
+More details about this project will be covered in my presentation :)
+
 I hope you enjoy your experience!
